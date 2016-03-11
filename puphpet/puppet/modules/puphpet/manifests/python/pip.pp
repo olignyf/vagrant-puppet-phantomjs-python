@@ -9,7 +9,7 @@ class puphpet::python::pip {
     creates => $download_location,
     command => "wget ${url} -O ${download_location} && \
                 python ${download_location}",
-    timeout => 30,
+    timeout => 300,
     path    => '/usr/bin'
   }
   -> exec { 'easy_install pip':
