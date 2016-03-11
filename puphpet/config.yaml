@@ -90,6 +90,8 @@ server:
         - libxml2-dev
         - libxslt-dev
         - expect
+        - cifs-utils
+        - libfontconfig1
 users_groups:
     install: '1'
     groups:
@@ -302,7 +304,6 @@ python:
         - robotframework
         - fabric
         - ssh
-        - paramiko
         - ansible
         - argparse
         - ansicolors
@@ -312,7 +313,6 @@ python:
         - lxml
         - jsonschema
         - xmltodict
-        - robotframework-sshlibrary
         - tablib
         - openpyxl
         - xlwt
@@ -322,6 +322,9 @@ python:
         - ansi2html
         - selenium
         - pexpect
+        - pycrypto
+        - paramiko
+        - robotframework-sshlibrary
     versions: {  }
 nodejs:
     install: '1'
