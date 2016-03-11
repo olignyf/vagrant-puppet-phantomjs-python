@@ -96,7 +96,7 @@ users_groups:
         - dev
     users:
         - flemieux
-        - hv
+        - dev
 locale:
     install: '1'
     settings:
@@ -299,6 +299,29 @@ python:
     install: '1'
     packages:
         - columnize
+        - robotframework
+        - fabric
+        - ssh
+        - paramiko
+        - ansible
+        - argparse
+        - ansicolors
+        - ipaddress
+        - requests
+        - requests_oauthlib
+        - lxml
+        - jsonschema
+        - xmltodict
+        - robotframework-sshlibrary
+        - tablib
+        - openpyxl
+        - xlwt
+        - xlrd
+        - xlutils
+        - pymongo
+        - ansi2html
+        - selenium
+        - pexpect
     versions: {  }
 nodejs:
     install: '1'
@@ -376,7 +399,7 @@ postgresql:
     grants: {  }
     adminer: 0
 mongodb:
-    install: '0'
+    install: '1'
     settings:
         bind_ip: 127.0.0.1
         port: '27017'
