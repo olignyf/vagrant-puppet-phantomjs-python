@@ -87,6 +87,9 @@ server:
     install: '1'
     packages:
         - python-dev
+        - libssl-dev
+        - build-essential
+        - libffi-dev
         - libxml2-dev
         - libxslt-dev
         - expect

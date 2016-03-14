@@ -28,9 +28,11 @@ class puphpet_python (
     }
 
     if ! defined(Package[$package_name]) {
+      notify{"(PYTHON) Installing package ${package_name}" :}
       package { $package_name:
         ensure   => $package_ensure,
         provider => pip,
+        require => Package['build-essential']
       }
     }
   }

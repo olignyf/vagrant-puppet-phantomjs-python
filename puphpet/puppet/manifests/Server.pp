@@ -156,6 +156,8 @@ class puphpet_server (
 
   each( $packages ) |$package| {
     if ! defined(Package[$package]) {
+      
+      notify{"(SERVER) Installing package ${package}" :}
       package { $package:
         ensure => present,
       }
