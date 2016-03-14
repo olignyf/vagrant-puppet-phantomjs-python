@@ -32,7 +32,7 @@ class puphpet_python (
       package { $package_name:
         ensure   => $package_ensure,
         provider => pip,
-        require => Package['build-essential']
+        require => Package['build-essential', 'python-dev', 'libffi-dev', 'libssl-dev']
       }
     }
   }
